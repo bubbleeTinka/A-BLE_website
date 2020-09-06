@@ -1,14 +1,35 @@
 @import "constants";
+
+@headerHeight: 50px;
+
 body {
   margin: 0px;
   font-family: @fontBody;
 }
 
 .header {
-  height: 50px;
+  height: @headerHeight;
   width: 100%;
   background-color: @colorViolet;
-  text-align: center;
   color: @colorTextLight;
   position: fixed;
+  top: 0px;
+  text-align: left;
+  padding-left: 20px;
+  .logo{
+    height: 20px;
+  }
+}
+.photo {
+  margin-top: @headerHeight;
+  height: 700px;
+  width: 100%;
+  background-image: url("images/intro_photo.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: top;
+  .introTitle{
+    font-family: @fontBody;
+  }
 }

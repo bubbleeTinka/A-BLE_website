@@ -6,8 +6,26 @@ body {
   height: 50px;
   width: 100%;
   background-color: #5238AE;
-  text-align: center;
   color: #FAFAF7;
   position: fixed;
+  top: 0px;
+  text-align: left;
+  padding-left: 20px;
+}
+.header .logo {
+  height: 20px;
+}
+.photo {
+  margin-top: 50px;
+  height: 700px;
+  width: 100%;
+  background-image: url("images/intro_photo.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: top;
+}
+.photo .introTitle {
+  font-family: 'Source Sans Pro', sans-serif;
 }
 /*# sourceMappingURL=styles.css.map */
