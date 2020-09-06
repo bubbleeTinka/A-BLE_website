@@ -4,9 +4,9 @@ body {
 .header {
   height: 50px;
   width: 100%;
-  background-color: blue;
+  background-color: #5238AE;
   text-align: center;
-  color: white;
+  color: #FAFAF7;
   position: fixed;
 }
 /*# sourceMappingURL=styles.css.map */
