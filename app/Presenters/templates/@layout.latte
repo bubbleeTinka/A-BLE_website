@@ -7,6 +7,12 @@
 </head>
 
 <body>
+	<div class="header">
+		<div class="text">
+			Tímanko je super
+		</div>
+	</div>
+
 	<div n:foreach="$flashes as $flash" n:class="flash, $flash->type">{$flash->message}</div>
 
 	{include content}
