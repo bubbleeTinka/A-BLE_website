@@ -10,10 +10,13 @@ body {
   position: fixed;
   top: 0px;
   text-align: left;
-  padding-left: 20px;
 }
 .header .logo {
-  height: 20px;
+  padding: 8px 0px 0px 16px ;
+}
+.header .logo svg {
+  width: auto !important;
+  height: 34px !important;
 }
 .photo {
   margin-top: 50px;
