@@ -1,2 +1,5 @@
 app/config/local.neon
 composer.lock
+vendor
+www/styles.css.map
+.idea
