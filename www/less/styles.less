@@ -1,11 +1,13 @@
 @import "constants";
 @import "mixins";
 
-@headerHeight: 50px;
+@headerHeight: 56px;
+@footerHeight: 56px;
 
 body {
   margin: 0px;
   font-family: @fontBody;
+  font-size: @fontSizeNormal;
 }
 
 .header {
@@ -18,7 +20,7 @@ body {
   text-align: left;
   .logo{
     padding: 8px 0px 0px 16px ;
-    .svgFormatHeight(34px);
+    .svgFormatHeight(40px);
   }
 }
 .photo {
@@ -30,12 +32,49 @@ body {
   background-size: cover;
   background-position-x: center;
   background-position-y: top;
-  .introTitle{
+  padding-top: 50px;
 
-    font-family: @fontBody;
+  .introTitle {
+    font-family: @fontTitle;
+    font-size: @fontSizeTitle;
     font-weight: bold;
-    font-size: xx-large;
     color: @colorTextDark;
     align-content: center;
+    width: 40%;
+    background-color: rgba(255, 255, 255, 0.85);
+    text-align: center;
+    margin: auto;
+    padding: 24px;
+  }
+}
+
+.footer {
+  height: @footerHeight;
+  width: 100%;
+  text-align: center;
+  font-size: @fontSizeSmall;
+  margin-top: 32px;
+}
+
+.contact-us {
+  margin: 24px auto 0px auto;
+}
+
+.button {
+  text-align: center;
+  width: fit-content;
+  font-weight: bold;
+  color: @colorTextLight;
+  background-color: @colorDark;
+  height: 40px;
+  line-height: 40px;
+  padding: 0px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  &:hover {
+    background-color: @colorViolet;
+  }
+  &:active {
+    background-color: @colorAccentTurquoise;
   }
 }
