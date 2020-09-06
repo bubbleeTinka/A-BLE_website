@@ -4,9 +4,14 @@
     height: auto !important;
   }
 }
+
 .svgFormatHeight(@height) {
   svg {
     width: auto !important;
     height: @height !important;
   }
+}
+
+.backgroundImage(@imageName) {
+  background-image: url("../images/@{imageName}");
 }
