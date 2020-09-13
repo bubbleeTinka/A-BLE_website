@@ -4,7 +4,12 @@
 @headerHeight: 56px;
 @footerHeight: 56px;
 
+html {
+  height: 100%;
+}
+
 body {
+  height: 100%;
   margin: 0px;
   font-family: @fontBody;
   font-size: @fontSizeNormal;
@@ -18,6 +23,7 @@ body {
   position: fixed;
   top: 0px;
   text-align: left;
+  z-index: @zIndexHeader;
   .logo{
     padding: 8px 0px 0px 16px ;
     .svgFormatHeight(40px);
@@ -25,14 +31,15 @@ body {
 }
 .photo {
   margin-top: @headerHeight;
-  height: 700px;
   width: 100%;
   .backgroundImage("intro_photo.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position-x: center;
   background-position-y: top;
-  padding-top: 50px;
+  padding-top: @headerHeight;
+  height: calc(100% - (2*@headerHeight));
+  position: relative;
 
   .introTitle {
     font-family: @fontTitle;
@@ -46,6 +53,16 @@ body {
     margin: auto;
     padding: 24px;
   }
+
+  .contact-us-container {
+    position: absolute;
+    width: 100%;
+    bottom: 48px;
+    .contact-us {
+      margin: auto;
+    }
+  }
+
 }
 
 .footer {
@@ -54,10 +71,6 @@ body {
   text-align: center;
   font-size: @fontSizeSmall;
   margin-top: 32px;
-}
-
-.contact-us {
-  margin: 24px auto 0px auto;
 }
 
 .button {
